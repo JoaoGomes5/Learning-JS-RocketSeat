@@ -1,6 +1,10 @@
 "use strict";
 
 var nome = 'João';
-var idade = 18; // console.log( 'Meu nome é' + nome + ' e tenho ' + idade +' anos.');  
-
-console.log("Meu nome \xE9 ".concat(nome)); //cOM ACENTO
+var idade = 18;
+var user = {
+  nome: nome,
+  idade: idade,
+  empresa: 'Blip'
+};
+console.log(user);
