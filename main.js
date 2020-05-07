@@ -1,21 +1,5 @@
-// REST //
+const nome = 'João';
+const idade = 18; 
 
-function soma(a , b ,  ...params){
-
-    return params;
-}
-
-console.log(soma(1 , 3 , 4,5,6,7,8));
-
-// SPREAD
-
-const user1 = {
-nome: "João",
-idade: 18,
-empresa: "Blip"
-
-};
-
-const user2 = {...user1, nome: 'Gustavo' , idade: 21 }
-
-console.log(user2);
+// console.log( 'Meu nome é' + nome + ' e tenho ' + idade +' anos.');  
+console.log(`Meu nome é ${nome}`);//cOM ACENTO
