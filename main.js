@@ -1,5 +1,16 @@
-const sum = (a = 3,b = 6) => a + b;  
+const user = {
+    nome:"João",
+    idade: 19,
+    morada : {
+        pais: "Portugal",
+        distrito : "Aveiro",
+        cidade : "Espinho",
+    },
+};
 
+ function mostraNome({nome,idade }){
+     console.log(nome,idade);
+ }
 
-console.log(sum(1));
-console.log(sum());
+ mostraNome(user);
+

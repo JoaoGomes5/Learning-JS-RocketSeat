@@ -1,10 +1,19 @@
 "use strict";
 
-var sum = function sum() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-  return a + b;
+var user = {
+  nome: "João",
+  idade: 19,
+  morada: {
+    pais: "Portugal",
+    distrito: "Aveiro",
+    cidade: "Espinho"
+  }
 };
 
-console.log(sum(1));
-console.log(sum());
+function mostraNome(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade;
+  console.log(nome, idade);
+}
+
+mostraNome(user);
